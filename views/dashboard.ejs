@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Productivity Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <h1>Employee Productivity Insights</h1>
+    <div>
+      <h2>Task Breakdown</h2>
+      <ul>
+        <li>BAU Tasks: <%= insights.categoryBreakdown.BAU %></li>
+        <li>Ad Hoc Tasks: <%= insights.categoryBreakdown.AdHoc %></li>
+        <li>
+          Project-Based Tasks: <%= insights.categoryBreakdown.ProjectBased %>
+        </li>
+      </ul>
+      <h2>Priority Breakdown</h2>
+      <ul>
+        <li>Low Priority: <%= insights.priorityBreakdown.Low %></li>
+        <li>Medium Priority: <%= insights.priorityBreakdown.Medium %></li>
+        <li>High Priority: <%= insights.priorityBreakdown.High %></li>
+      </ul>
+    </div>
+  </body>
+</html>
