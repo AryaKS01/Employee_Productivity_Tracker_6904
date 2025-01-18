@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Progress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+    <!-- Sidebar -->
+    <div class="flex">
+        <div class="w-64 bg-blue-500 text-white p-6">
+            <h2 class="text-2xl font-bold">Employee Dashboard</h2>
+            <ul class="mt-8 space-y-4">
+                <li><a href="#timeline" class="block">Timeline</a></li>
+                <li><a href="employeeProgress.html" class="block">Task Progress</a></li>
+                <li><a href="analytics.html" class="block">Task Analytics</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <h1 class="text-2xl font-bold mb-6 text-gray-800">Task Progress</h1>
+
+            <!-- Task List -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">Completed Tasks</h2>
+                <div id="taskProgress">
+                    <!-- Task cards will be dynamically added here -->
+                </div>
+            </section>
+
+            <!-- Progress Chart -->
+            <section>
+                <div class="progress-chart">
+                    <h2 class="chart-title">Task Category Distribution</h2>
+                    <canvas id="taskPieChart" width="400" height="400"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../Employee/scripts/employeeProgress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="flex">
+
+    <!-- Sidebar -->
+    <div class="w-64 bg-blue-500 text-white p-6">
+        <h2 class="text-2xl font-bold">Employee Dashboard</h2>
+        <ul class="mt-8 space-y-4">
+            <li><a href="#timeline" class="block">Timeline</a></li>
+            <li><a href="employeeProgress.html" class="block">Task Progress</a></li>
+            <li><a href="analytics.html" class="block">Task Analytics</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-8">
+        <h1 class="text-3xl font-semibold mb-6">Task Timeline</h1>
+
+        <div id="timeline">
+            <!-- Task Form -->
+            <form id="taskForm" class="space-y-4 mb-6">
+                <input type="text" id="taskTitle" class="w-full p-2 border border-gray-300 rounded" placeholder="Task Title" required>
+                <textarea id="taskDescription" class="w-full p-2 border border-gray-300 rounded" placeholder="Task Description" required></textarea>
+                <input type="number" id="timeSpent" class="w-full p-2 border border-gray-300 rounded" placeholder="Time Spent (hrs)" required>
+                <select id="priority" class="w-full p-2 border border-gray-300 rounded">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <select id="taskCategory" class="w-full p-2 border border-gray-300 rounded" required>
+                    <option value="BAU">BAU</option>
+                    <option value="Ad Hoc">Ad Hoc</option>
+                    <option value="Project-Based">Project-Based</option>
+                </select>
+                <input type="file" id="taskAttachment" class="w-full p-2 border border-gray-300 rounded">
+                <input type="url" id="taskLink" class="w-full p-2 border border-gray-300 rounded" placeholder="Add Supporting Link (optional)">
+                <input type="text" id="taskReference" class="w-full p-2 border border-gray-300 rounded" placeholder="Assigned By (Manager/Colleague)">
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded">Add Task</button>
+            </form>
+
+            <!-- Task List -->
+            <div id="taskList" class="space-y-4">
+                <!-- Tasks will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../Employee/scripts/employee.js"></script>
+</body>
+</html>

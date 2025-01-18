@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Analytics</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex">
+
+    <!-- Sidebar -->
+    <div class="w-64 bg-blue-500 text-white p-6">
+        <h2 class="text-2xl font-bold">Analytics</h2>
+        <ul class="mt-8 space-y-4">
+            <li><a href="employee.html" class="block">Dashboard</a></li>
+            <li><a href="employeeProgress.html" class="block">Task Progress</a></li>
+            <li><a href="analytics.html" class="block">Task Analytics</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-1 p-8">
+        <h1 class="text-3xl font-semibold mb-6">Task Category Analytics</h1>
+        <canvas id="taskPieChart" width="100px" height="100px"></canvas>
+    </div>
+
+    <script src="../Employee/scripts/analytics.js"></script>
+</body>
+</html>
