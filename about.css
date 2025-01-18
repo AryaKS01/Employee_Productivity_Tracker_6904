@@ -1,0 +1,67 @@
+.acontainer h2{
+    margin-top: 6%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.acontainer h2::first-letter{
+    color: orange;
+    font-size: 45px;
+}
+.acontainer h2+p{
+    font-size: 18px;
+    text-align: justify;
+    padding: 0 12%;
+    color: rgb(205, 199, 199);
+}
+.acontainer h3{
+    color: orange;
+}
+
+.acontainer h2+p+div{
+    display: flex;
+    margin: 2% 3%;
+    max-width: 40%;
+    color: rgb(234, 224, 224);
+}
+.acontainer>div+p{
+    text-align: center;
+    color: white;
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .about-section .text,
+  .about-section .image {
+    flex: 1; 
+  }
+  
+  .about-section .image img {
+    max-width: 100%;
+    height: auto; 
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      display: block; 
+      text-align: center; 
+    }
+  
+    .about-section .text {
+      margin-bottom: 20px;
+    }
+  
+    .about-section .image img {
+      max-width: 90%; 
+      margin: 0 auto; 
+      display: block;
+    }
+  }
+  
