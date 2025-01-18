@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Admin Panel</h2>
+      <nav>
+        <ul>
+          <li><a href="#" data-target="overview" class="active">Overview</a></li>
+          <li><a href="#" data-target="analytics">Analytics</a></li>
+          <li><a href="#" data-target="tasks">Tasks</a></li>
+          <li><a href="#" data-target="timeline">Timeline</a></li>
+          <li><a href="#" data-target="settings">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Overview Section -->
+      <section id="overview" class="tab-content active">
+        <h2>Overview</h2>
+        <div class="cards" id="overview-cards">
+          <!-- Overview cards will be dynamically populated -->
+        </div>
+      </section>
+
+      <!-- Analytics Section -->
+      <section id="analytics" class="tab-content">
+        <h2>Analytics</h2>
+        <div class="charts">
+          <canvas id="pieChart"></canvas>
+          <canvas id="barChart"></canvas>
+        </div>
+      </section>
+
+      <!-- Tasks Section -->
+      <section id="tasks" class="tab-content">
+        <h2>Task Breakdown</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Task Name</th>
+              <th>Type</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody id="task-table-body">
+            <!-- Rows dynamically populated -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Timeline Section -->
+      <section id="timeline" class="tab-content">
+        <h2>Timeline</h2>
+        <canvas id="timelineChart"></canvas>
+      </section>
+
+      <!-- Settings Section -->
+      <section id="settings" class="tab-content">
+        <h2>Settings</h2>
+        <button id="logoutBtn">Logout</button>
+        <button id="toggleThemeBtn">Toggle Dark/Light Mode</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+
+
