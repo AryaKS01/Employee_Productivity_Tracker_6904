@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: black;
+  }
+
+@media (max-width: 768px) {
+    body {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

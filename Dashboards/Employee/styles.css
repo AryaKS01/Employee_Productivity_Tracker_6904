@@ -1,0 +1,91 @@
+/* Styling for body and general page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb; /* Light gray background */
+}
+
+/* Scrollable Task List */
+#taskProgress {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid for responsive design */
+    gap: 1rem; /* Space between progress cards */
+    padding: 1rem;
+}
+
+/* Task Progress Section */
+#taskProgress {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid for responsive design */
+    gap: 1rem; /* Space between progress cards */
+}
+
+/* Progress Card */
+.task-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb; /* Light gray border */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add a hover effect */
+}
+
+/* Hover effect for cards */
+.task-card:hover {
+    transform: translateY(-3px); /* Slight upward movement */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Task card header */
+.task-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #374151; /* Dark gray for text */
+    margin-bottom: 0.5rem;
+}
+
+/* Task card details */
+.task-detail {
+    font-size: 0.875rem;
+    color: #6b7280; /* Medium gray for details */
+    line-height: 1.5;
+}
+
+/* Progress Bar Container */
+.relative {
+    position: relative;
+}
+
+/* Progress Bar Styling */
+.bg-blue-600 {
+    background-color: #2563eb; /* Blue color */
+    height: 8px;
+    border-radius: 0.25rem;
+}
+
+/* Progress Text Styling */
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-gray-500 {
+    color: #6b7280; /* Medium gray for text */
+}
+
+/* Styling for the task progress display */
+#taskProgress div {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb; /* Light gray border */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+@media (max-width: 768px) {
+    #taskProgress {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+/* .taskPieChart canvas {
+    width: 300px;
+    height: 300px ;
+} */
