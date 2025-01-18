@@ -83,15 +83,15 @@
         }
 
         // Password Validation
-        if (!isValidPassword(password)) {
-          passwordError.textContent =
-            "Password must be at least 8 characters and include a mix of letters and numbers.";
-          valid = false;
-        }
+        // if (!isValidPassword(password)) {
+        //   passwordError.textContent =
+        //     "Password must be at least 8 characters and include a mix of letters and numbers.";
+        //   valid = false;
+        // }
 
-        if (!valid) {
-          return false;
-        }
+        // if (!valid) {
+        //   return false;
+        // }
 
         // Check if credentials match
         const storedEmail = "employer2@gmail.com";
@@ -108,7 +108,7 @@
         }
 
         // If login is successful, redirect to another page
-        window.location.href = "homepage/Main.html";
+        window.location.href = "/Employee_Productivity_Tracker_6904/Dashboards/Employer/tracker/index.html";
         return false;
       }
 
