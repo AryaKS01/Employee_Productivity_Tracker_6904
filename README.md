@@ -1,4 +1,5 @@
 # Employee Productivity Tracker
+![image](https://github.com/user-attachments/assets/ea8c2dfe-9c53-4b28-a055-461d15f569ca)
 
 ## Overview
 
