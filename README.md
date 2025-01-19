@@ -55,8 +55,10 @@ To set up the Employee Productivity Tracker locally, follow these steps:
 
 ## Deployed Link
 
-The application is deployed and can be accessed at: [Employee Productivity Tracker](https://psharvari11.github.io/Employee_Productivity_Tracker_6904/)
+The application is deployed and can be accessed at: [Employee Productivity Tracker](https://shiny-taffy-a3dae2.netlify.app/)
+Note: If shows Dangerous Site by any chance, try running it in Incognito Mode. 
 
+## Project Presentation Link:[Employee Productivity Tracker_Presentation_Link](https://drive.google.com/file/d/1ID40nySS1cnZ1rNx2jwcD6BpknmJgOd9/view?usp=sharing)
 ---
 
 *Note: As the application uses local storage, data will be saved only on the device and browser you use to access it. Clearing browser data will remove the stored information.*
