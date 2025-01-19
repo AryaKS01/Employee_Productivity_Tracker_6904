@@ -55,7 +55,7 @@ To set up the Employee Productivity Tracker locally, follow these steps:
 
 ## Deployed Link
 
-The application is deployed and can be accessed at: [Employee Productivity Tracker](https://shiny-taffy-a3dae2.netlify.app/)
+The application is deployed and can be accessed at: [Employee Productivity Tracker](https://employeetracker6904.netlify.app/)
 Note: If shows Dangerous Site by any chance, try running it in Incognito Mode. 
 
 ## Project Presentation Link:[Employee Productivity Tracker_Presentation_Link](https://drive.google.com/file/d/1ID40nySS1cnZ1rNx2jwcD6BpknmJgOd9/view?usp=sharing)
